@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'fr-FR' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include layout/preload.html %}
+    {% include layout/css.html %}
+    {% include layout/seo.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="main" aria-label="Content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include cookie-banner.html %}
+    {% include layout/js.html %}
+  </body>
+</html>
