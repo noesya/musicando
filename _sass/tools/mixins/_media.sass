@@ -1,0 +1,19 @@
+@mixin aspect-ratio($ratio)
+    > *
+        aspect-ratio: $ratio
+        height: auto
+        object-fit: cover
+        width: 100%
+    @supports not (aspect-ratio: auto)
+        position: relative
+        &:before
+            content: ''
+            display: block
+            padding-top: $ratio
+            width: 100%
+        > *
+            height: 100%
+            left: 0
+            position: absolute
+            top: 0
+            width: 100%

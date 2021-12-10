@@ -1,25 +1,12 @@
 <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="/">{{site.title}}</a>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav flex-column">
-        {% for item in site.data.menus.primary %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-        <ul class="nav flex-column">
-        {% for item in site.data.menus.legal %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
+    <a href="/"><img src="/assets/images/logos/logo.svg" alt="{{site.title}}"></a>
+    <ul class="nav">
+    {% for item in site.data.menus.legal %}
+      <li class="nav-item">
+        <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 </footer>
