@@ -1,4 +1,6 @@
-# jekyll-starter Bootstrap 5
+# Musicando
+
+L’éducation musicale précoce au service des enfants des zones défavorisées
 
 ## Build
 
@@ -31,7 +33,7 @@ yarn start
 Pour faire la mise à jour :
 
 ```
-git remote add template git@github.com:noesya/jekyll-starter.git
+git remote add template git@github.com:noesya/jekyll-starter-bs5.git
 git fetch --all
 git merge template/main --allow-unrelated-histories
 ```
