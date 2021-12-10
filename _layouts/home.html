@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+
+<div class="row"> 
+   <div class="col-md-6 offset-md-5">
+      {{ text }}
+    </div>
+  {% for section in sections %}
+    {% assign class_col = "col-md-6" %}
+    <div class="{{ class_col }}">
+      {{ section.image }}
+      {{ forloop.index }}
+      <p>{{ section.text }}</p>
+    </div>
+  {% endfor %}
+</div>
