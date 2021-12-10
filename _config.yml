@@ -1,6 +1,7 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: Jekyll Starter BS5
+title: Musicando
+description: L’éducation musicale précoce au service des enfants des zones défavorisées
 lang: fr
 
 exclude:
@@ -45,8 +46,17 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "concerts"
+    values:
+      layout: "concert"
 
 collections:
   pages:
+    output: true
+    permalink: /:title
+  concerts:
     output: true
     permalink: /:title
