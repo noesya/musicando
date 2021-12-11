@@ -8,7 +8,7 @@ layout: default
     </div>
   {% for section in page.sections %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
+    {% if thecycle == 'even' %}
       {% assign class_col = "col-md-6 offset-md-5" %}
     {% else %}
       {% assign class_col = "col-md-5 offset-md-1" %}
