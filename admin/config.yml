@@ -1,0 +1,78 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: fr
+
+logo_url: /assets/images/logos/logo.svg
+
+media_folder: 'assets/uploads'
+
+markdown_light_button: &MARKDOWN_LIGHT_BUTTONS
+  [bulleted-list, bold, italic, link]
+
+menu_fields: &MENU_FIELDS
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "URL", name: "url", widget: "string"}
+
+page_fields: &PAGE_FIELDS
+  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Text', name: 'body', widget: 'markdown' }
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+
+      - label: 'Legal notice and privacy policy'
+        name: 'legal-notice-and-privacy-policy'
+        file: 'legal-notice-and-privacy-policy.md'
+        fields: *PAGE_FIELDS
+
+      - label: 'Terms and conditions'
+        name: 'terms-and-conditions'
+        file: 'terms-and-conditions.md'
+        fields: *PAGE_FIELDS
+
+      - label: 'Competition rules quest 2021-2022'
+        name: 'competition-rules-quest-2021-2022'
+        file: 'competition-rules-quest-2021-2022.md'
+        fields: *PAGE_FIELDS
+
+      - label: 'Competition rules quest intrapreneur 2021-2022'
+        name: 'competition-rules-quest-intrapreneur-2021-2022'
+        file: 'competition-rules-quest-intrapreneur-2021-2022.md'
+        fields: *PAGE_FIELDS
+
+      - label: 'Réglement quest 2021-2022 Intrapreneuriat'
+        name: 'reglement-quest-2021-2022-intrapreneuriat'
+        file: 'reglement-quest-2021-2022-intrapreneuriat.md'
+        fields: *PAGE_FIELDS
+
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: "Menus"
+        name: "menu"
+        file: "_data/menus.yml"
+        fields:
+          - label: "Primary menu"
+            name: "primary"
+            widget: "list"
+            allow_add: false
+            fields: *MENU_FIELDS
+          - label: "Legal"
+            name: "legal"
+            widget: "list"
+            allow_add: false
+            fields: *MENU_FIELDS
+          - label: "Social"
+            name: "social"
+            widget: "list"
+            allow_add: false
+            fields: *MENU_FIELDS
