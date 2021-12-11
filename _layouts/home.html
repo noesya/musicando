@@ -2,14 +2,21 @@
 layout: default
 ---
 
-<div class="row"> 
+<div class="row">
    <div class="col-md-6 offset-md-5">
       {{ text }}
     </div>
-  {% for section in sections %}
-    {% assign class_col = "col-md-6" %}
+  {% for section in page.sections %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+      {% assign class_col = "col-md-6 offset-md-5" %}
+    {% else %}
+      {% assign class_col = "col-md-5 offset-md-1" %}
+    {% endif %}
     <div class="{{ class_col }}">
-      {{ section.image }}
+      {% if section.image %}
+        {% picture default "{{ section.image }}" alt="" %}
+      {% endif %}
       {{ forloop.index }}
       <p>{{ section.text }}</p>
     </div>
