@@ -1,7 +1,7 @@
 <header class="header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="/">{{site.title}}</a>
+      <a class="navbar-brand" href="{{ site.url | default: '/' }}"><img src="/assets/images/logos/logo.svg" alt="{{site.title}}" width="384" height="64"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

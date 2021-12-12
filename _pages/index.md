@@ -2,6 +2,7 @@
 layout: home
 title: Accueil
 description: L’éducation musicale précoce au service des enfants des zones défavorisées
+hero_title: L’éducation musicale précoce au service des enfants des zones défavorisées
 text: >
   L’impact de l’éducation musicale précoce sur l’apprentissage et le développement général des jeunes enfants, notamment ceux des zones défavorisées, a fait l’objet d’études multiples essentiellement rétrospectives ou parfois longitudinales mais surtout chez l’adolescent.  En pratique, le consensus serait qu’il faudrait passer à l’acte et systématiser l’apprentissage musicale dans les zones défavorisées chez les enfants le plus tôt possible. Mais les décideurs ne disposent pas des données critiques nécessaire à ce passage à l’acte.
 

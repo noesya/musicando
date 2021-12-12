@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="row">
-   <div class="col-md-6 offset-md-5">
-      {{ text }}
-    </div>
+  <div class="col-md-6 offset-md-5">
+    {{ page.text }}
+  </div>
   {% for section in page.sections %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'even' %}
@@ -17,7 +17,7 @@ layout: default
       {% if section.image %}
         {% picture default "{{ section.image }}" alt="" %}
       {% endif %}
-      {{ forloop.index }}
+      <strong class="number">{{ forloop.index }}</strong>
       <p>{{ section.text }}</p>
     </div>
   {% endfor %}

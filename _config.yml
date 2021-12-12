@@ -45,18 +45,9 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "concerts"
-    values:
-      layout: "concert"
+      layout: "default"
 
 collections:
   pages:
-    output: true
-    permalink: /:title
-  concerts:
     output: true
     permalink: /:title

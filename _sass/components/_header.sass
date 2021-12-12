@@ -1,0 +1,21 @@
+.header
+    left: 10px
+    position: absolute
+    right: 10px
+    top: 10px
+    .navbar-brand
+        margin-top: $gutters
+    .nav-link
+        text-transform: uppercase
+
+    @include media-breakpoint-up(md)
+        .navbar-brand
+            margin-top: $gutters * 3
+        .navbar-collapse
+            justify-content: flex-end
+
+    @include media-breakpoint-down(sm)
+        .navbar-brand
+            img
+                height: auto
+                width: 135px
