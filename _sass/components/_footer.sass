@@ -1,22 +1,28 @@
 .footer
     background: $gradient
-    border: 10px solid white
+    box-shadow: inset 0 0 0 10px white
     height: 230px
     text-align: center
     .container
-        align-items: center
+        align-items: flex-end
         display: flex
+        flex-direction: column
         height: 100%
-        justify-content: center
+        justify-content: flex-end
         position: relative
+        > a
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate3d(-50%, -50%, 0)
     .nav-link
         color: white
-    @include media-breakpoint-up(md)
-        .nav
-            bottom: 0
-            position: absolute
-            right: 0
+
     @include media-breakpoint-down(sm)
         height: auto
         position: relative
         padding-top: 100%
+        .container
+            align-items: center
+            position: absolute
+            top: 0
