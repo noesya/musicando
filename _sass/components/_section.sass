@@ -1,0 +1,9 @@
+.section
+    margin-bottom: $gutters * 3
+    @include media-breakpoint-up(md)
+        margin-bottom: $gutters * 5
+        .number
+            margin-left: calc(-#{$col} + #{$grid-gutter-width} / 2)
+            position: absolute
+            transform: translateY(-50%)
+            z-index: -1
