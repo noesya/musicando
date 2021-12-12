@@ -23,34 +23,10 @@ page_fields: &PAGE_FIELDS
 collections:
   - name: 'pages'
     label: 'Pages'
-    editor:
-      preview: false
-    files:
-
-      - label: 'Legal notice and privacy policy'
-        name: 'legal-notice-and-privacy-policy'
-        file: 'legal-notice-and-privacy-policy.md'
-        fields: *PAGE_FIELDS
-
-      - label: 'Terms and conditions'
-        name: 'terms-and-conditions'
-        file: 'terms-and-conditions.md'
-        fields: *PAGE_FIELDS
-
-      - label: 'Competition rules quest 2021-2022'
-        name: 'competition-rules-quest-2021-2022'
-        file: 'competition-rules-quest-2021-2022.md'
-        fields: *PAGE_FIELDS
-
-      - label: 'Competition rules quest intrapreneur 2021-2022'
-        name: 'competition-rules-quest-intrapreneur-2021-2022'
-        file: 'competition-rules-quest-intrapreneur-2021-2022.md'
-        fields: *PAGE_FIELDS
-
-      - label: 'Réglement quest 2021-2022 Intrapreneuriat'
-        name: 'reglement-quest-2021-2022-intrapreneuriat'
-        file: 'reglement-quest-2021-2022-intrapreneuriat.md'
-        fields: *PAGE_FIELDS
+    create: true
+    fields: *PAGE_FIELDS
+    folder: '_pages'
+    identifier_field: name
 
   - name: 'config'
     label: 'Config'
