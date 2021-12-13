@@ -1,6 +1,5 @@
 .event
     margin-bottom: $gutters * 2
-    text-decoration: none
     h2
         margin-bottom: 0
     time
@@ -8,6 +7,42 @@
         display: block
         margin-bottom: $gutters
     div
-        margin-bottom: $gutters
+        margin-bottom: $gutters * 2
+    a
+        align-items: flex-start
+        display: flex
+        text-decoration: none
+        i
+            aspect-ratio: 1
+            background-image: $gradient
+            border-radius: 50%
+            display: block
+            flex-shrink: 0
+            margin-right: $gutters / 2
+            margin-top: px2rem(-5)
+            position: relative
+            width: 40px
+            &::before
+                content: ''
+                background: escape-svg($icon-download) no-repeat center
+                background-size: auto 35%
+                height: 100%
+                position: absolute
+                width: 100%
+        &:hover
+            text-decoration: underline
     p:last-of-type
         margin-bottom: 0
+
+    @include media-breakpoint-up(md)
+        a
+            i
+                margin-right: 0
+                position: absolute
+                transform: translateX(calc(-100% - #{$grid-gutter-width}))
+                width: calc(#{$col} - #{$grid-gutter-width})
+
+    @include media-breakpoint-up(lg)
+        a
+            i
+                margin-top: px2rem(-15)

@@ -28,10 +28,14 @@
                 justify-content: flex-end
             &-nav
                 margin-right: -0.5rem
+
+    @include media-breakpoint-up(lg)
         .nav-item
             margin-left: $gutters
 
     @include media-breakpoint-down(sm)
+        .navbar-nav
+            padding-top: $gutters
         .navbar-brand
             img
                 height: auto

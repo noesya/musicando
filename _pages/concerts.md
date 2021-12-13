@@ -10,7 +10,7 @@ events:
   date: Dimanche 14 mars 2021
   file: /assets/documents/concerts/2021-03-14-concert-zoom-kremlin-bicetre.pdf
   weight: 65 ko
-- title: Concert Zoom au au Kremlin-Bicêtre
+- title: Concert Zoom au Kremlin-Bicêtre
   date: Dimanche 21 juin 2020
   file: /assets/documents/concerts/2020-06-21-concert-zoom-kremlin-bicetre.pdf
   weight: 5,6 mo
