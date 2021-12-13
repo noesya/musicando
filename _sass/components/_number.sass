@@ -11,6 +11,11 @@
     margin-bottom: 0
     width: px2rem(104)
 
+
+    @include media-breakpoint-up(md)
+        font-size: 2.6em
+        width: calc(2 * #{$col} - #{$grid-gutter-width})
+
+
     @include media-breakpoint-up(md)
         font-size: 3.6em
-        width: calc(2 * #{$col} - #{$grid-gutter-width})
