@@ -10,10 +10,10 @@ layout: default
         <time datetime="{{ event.date | date: "%Y-%m-%d" }}">{{ event.date }}</time>
         {% if event.text %}
           <div>
-            {{ event.text | markownify }}
+            {{ event.text | markdownify }}
           </div>
         {% endif %}
-        <p>{{ event.file }} ({{ event.weight }})</p>
+        <p class="file">{{ event.file }} ({{ event.weight }})</p>
       </a>
     </div>
   {% endfor %}
