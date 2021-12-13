@@ -37,8 +37,12 @@
     @include media-breakpoint-up(md)
         a
             i
-                margin-top: px2rem(-15)
                 margin-right: 0
                 position: absolute
                 transform: translateX(calc(-100% - #{$grid-gutter-width}))
                 width: calc(#{$col} - #{$grid-gutter-width})
+
+    @include media-breakpoint-up(lg)
+        a
+            i
+                margin-top: px2rem(-15)
