@@ -2,16 +2,18 @@
 layout: default
 ---
 
+{% assign class_even = "col-md-8 offset-md-4 col-lg-6 offset-lg-5" %}
+
 <div class="row">
-  <div class="section col-md-6 offset-md-5">
-    {{ page.text }}
+  <div class="section {{ class_even }}">
+    {{ content }}
   </div>
   {% for section in page.sections %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'even' %}
-      {% assign class_col = "col-md-6 offset-md-5" %}
+      {% assign class_col = class_even %}
     {% else %}
-      {% assign class_col = "col-md-5 offset-md-1" %}
+      {% assign class_col = "col-md-8 offset-md-1 col-lg-5" %}
     {% endif %}
     <div class="section {{ class_col }}">
       {% if section.image %}

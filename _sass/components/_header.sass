@@ -1,18 +1,29 @@
 .header
     left: 10px
+    padding-top: 10px
     position: absolute
     right: 10px
     top: 10px
-    .navbar-brand
-        margin-top: $gutters
+    .navbar
+        &-brand
+            margin-top: $gutters
+        &-toggler
+            border: 0
+        &-toggler-icon
+            background-image: $navbar-toggler-icon-bg
     .nav-link
         text-transform: uppercase
 
     @include media-breakpoint-up(md)
-        .navbar-brand
-            margin-top: $gutters * 3
-        .navbar-collapse
-            justify-content: flex-end
+        .navbar
+            &-brand
+                margin-top: $gutters * 3
+            &-collapse
+                justify-content: flex-end
+            > .container
+                align-items: flex-start
+        .nav-item
+            margin-left: $gutters
 
     @include media-breakpoint-down(sm)
         .navbar-brand

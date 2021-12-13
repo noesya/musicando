@@ -8,11 +8,20 @@
     height: px2rem(104)
     justify-content: center
     width: px2rem(104)
+
     @include media-breakpoint-up(md)
         align-items: flex-end
-        height: px2rem(205)
+        height: px2rem(150)
         justify-content: flex-end
         padding-bottom: 2rem
-        padding-right: 8rem
+        padding-right: 4rem
         text-align: right
+        width: px2rem(150)
+
+    @include media-breakpoint-up(lg)
+        height: px2rem(205)
+        padding-right: 6rem
         width: px2rem(205)
+
+    @include media-breakpoint-up(xl)
+        padding-right: 8rem
