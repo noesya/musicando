@@ -1,27 +1,16 @@
 .number
     @extend h1
     align-items: center
+    aspect-ratio: 1
     background: $gradient
     border-radius: 50%
     color: white
     display: flex
-    height: px2rem(104)
+    height: auto
     justify-content: center
+    margin-bottom: 0
     width: px2rem(104)
 
     @include media-breakpoint-up(md)
-        align-items: flex-end
-        height: px2rem(150)
-        justify-content: flex-end
-        padding-bottom: 2rem
-        padding-right: 4rem
-        text-align: right
-        width: px2rem(150)
-
-    @include media-breakpoint-up(lg)
-        height: px2rem(205)
-        padding-right: 6rem
-        width: px2rem(205)
-
-    @include media-breakpoint-up(xl)
-        padding-right: 8rem
+        font-size: 3.6em
+        width: calc(2 * #{$col} - #{$grid-gutter-width})

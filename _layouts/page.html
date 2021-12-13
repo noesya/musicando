@@ -5,7 +5,7 @@ layout: default
 <div class="row">
   {% for event in page.events %}
     <div class="section col-md-8 offset-md-2 col-lg-6 offset-lg-4">
-      <a href="/assets/documents/concerts/{{ event.file }}" class="event">
+      <div class="event">
         <h2>{{ event.title }}</h2>
         <time datetime="{{ event.date | date: "%Y-%m-%d" }}">{{ event.date }}</time>
         {% if event.text %}
@@ -13,8 +13,8 @@ layout: default
             {{ event.text | newline_to_br | markdownify }}
           </div>
         {% endif %}
-        <p class="file">{{ event.file }} ({{ event.weight }})</p>
-      </a>
+        <a href="/assets/documents/concerts/{{ event.file }}" class="file" rel="noopener" target="_blank">{{ event.file }} ({{ event.weight }})</a>
+      </div>
     </div>
   {% endfor %}
 </div>
