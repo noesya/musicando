@@ -19,6 +19,12 @@ page_fields: &PAGE_FIELDS
   - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
   - { label: 'Title', name: 'title', widget: 'string' }
   - { label: 'Text', name: 'body', widget: 'markdown' }
+  - label: 'Sections'
+    name: 'sections'
+    widget: 'list'
+    field:
+      - { label: Image, name: image, widget: image }
+      - { label: 'Text', name: 'text', widget: 'markdown' }
 
 collections:
   - name: 'pages'
