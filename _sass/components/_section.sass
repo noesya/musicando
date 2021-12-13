@@ -3,6 +3,7 @@
     picture
         display: block
         margin-bottom: $gutters * 2
+        width: 100%
 
     @include media-breakpoint-up(md)
         margin-bottom: $gutters * 5
@@ -11,6 +12,12 @@
             position: absolute
             transform: translateY(-40%)
             z-index: -1
+        picture
+            width: calc(#{$col} * 9.5 + #{$grid-gutter-width})
+        &:nth-child(odd)
+            picture
+                width: calc(#{$col} * 10 - (1.5rem / 6))
+
     @include media-breakpoint-up(xl)
         .number
             margin-left: calc(-#{$col} + #{$grid-gutter-width} / 2)

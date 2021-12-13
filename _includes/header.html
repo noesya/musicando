@@ -1,19 +1,25 @@
 <header class="header">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="{{ site.url | default: '/' }}"><img src="/assets/images/logos/logo.svg" alt="{{site.title}}" width="384" height="64"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-        {% for item in site.data.menus.primary %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 offset-lg-1">
+
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="{{ site.url | default: '/' }}"><img src="/assets/images/logos/logo.svg" alt="{{site.title}}" width="384" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            {% for item in site.data.menus.primary %}
+              <li class="nav-item">
+                <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </nav>
+
       </div>
     </div>
-  </nav>
+  </div>
 </header>
