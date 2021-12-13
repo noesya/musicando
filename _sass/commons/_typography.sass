@@ -10,3 +10,10 @@ h1, .h1
         font-size: px2rem(60)
     @include media-breakpoint-up(lg)
         font-size: px2rem(90)
+
+a
+    text-decoration-color: transparent
+    text-decoration-thickness: 1px
+    text-underline-offset: 3px
+    &:hover
+        text-decoration-color: $primary
