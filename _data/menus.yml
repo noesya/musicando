@@ -1,12 +1,10 @@
 primary:
   - title: Accueil
     url: /
-  - title: Projet
-    url: /projet
   - title: Concerts
     url: /concerts
-  - title: Contact
-    url: /contact
+  - title: Résultats scientifiques
+    url: /resultats-scientifiques
 legal:
   - title: Mentions légales
     url: /mentions-legales
