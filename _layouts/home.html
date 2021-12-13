@@ -17,7 +17,7 @@ layout: default
     {% endif %}
     <div class="section {{ class_col }}">
       {% if section.image %}
-        {% picture default "{{ section.image }}" alt="" %}
+        {% picture default "{{ section.image }}" --img alt="" class="img-fluid" %}
       {% endif %}
       <strong class="number">{{ forloop.index }}</strong>
       <p>{{ section.text }}</p>
