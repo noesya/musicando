@@ -1,10 +1,10 @@
-<div class="partners">
-  <div class="container">
-    <h3>Partenaires</h3>
-    <div class="row row-cols-2 row-cols-md-6">
+<div class="section container">
+  <h3>Partenaires</h3>
+  <div class="row row-cols-2 row-cols-md-6">
+    {% for partner in site.data.partners %}
       <div class="col">
-
+        {% picture default "assets/images/partners/{{ partner.image  }}" --img alt="{{ partner.title }}" class="img-fluid" %}
       </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
