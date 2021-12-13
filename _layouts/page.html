@@ -10,7 +10,7 @@ layout: default
         <time datetime="{{ event.date | date: "%Y-%m-%d" }}">{{ event.date }}</time>
         {% if event.text %}
           <div>
-            {{ event.text | markdownify }}
+            {{ event.text | newline_to_br | markdownify }}
           </div>
         {% endif %}
         <p class="file">{{ event.file }} ({{ event.weight }})</p>
