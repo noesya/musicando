@@ -1,5 +1,5 @@
 .section
-    margin-bottom: $gutters * 3
+    margin-bottom: $gutters * 4
     picture
         display: block
         margin-bottom: -$gutters * 2
@@ -9,10 +9,12 @@
         padding-bottom: 5%
         position: relative
         z-index: -1
+    p:last-of-type
+        margin-bottom: 0
 
 
     @include media-breakpoint-up(md)
-        margin-bottom: $gutters * 5
+        margin-bottom: $gutters * 6
         .number
             justify-content: flex-end
             padding-bottom: 2%
@@ -20,6 +22,7 @@
             position: absolute
             transform: translate(calc(-50% - #{$grid-gutter-width} / 2), -40%)
         picture
+            margin-bottom: $gutters * 2
             width: calc(#{$col} * 9.5 + #{$grid-gutter-width})
         &:nth-child(odd)
             picture
