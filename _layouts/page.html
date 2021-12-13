@@ -13,7 +13,7 @@ layout: default
             {{ event.text | newline_to_br | markdownify }}
           </div>
         {% endif %}
-        <a href="/assets/documents/concerts/{{ event.file }}" class="file" rel="noopener" target="_blank"><i></i>{{ event.file }} ({{ event.weight }})</a>
+        <a href="{{ event.file }}" class="file" rel="noopener" target="_blank"><i></i>{{ event.file  | split: '/' | last }} ({{ event.weight }})</a>
       </div>
     </div>
   {% endfor %}
