@@ -3,7 +3,13 @@
   <div class="row row-cols-2 row-cols-md-6">
     {% for partner in site.data.partners %}
       <div class="col">
-        {% picture default "assets/images/partners/{{ partner.image  }}" --img alt="{{ partner.title }}" class="img-fluid" %}
+        {% picture
+            default
+            "assets/images/partners/{{ partner.image  }}"
+            --img
+            alt="{{ partner.title }}"
+            class="img-fluid"
+            width="{{ partner.width }}"  %}
       </div>
     {% endfor %}
   </div>

@@ -1,12 +1,18 @@
 - title: Ministère de la Culture
   image: 'ministere-culture.png'
+  width: 180
 - title: Prefet du Val-de-Marne
   image: 'prefet-val-de-marne.png'
+  width: 125
 - title: CAF du Val-de-Marne
   image: 'caf-val-de-marne.png'
+  width: 125
 - title: Le Kremlin Bicetre
   image: 'le-kremlin-bicetre.png'
+  width: 173
 - title: Grand Orly Seine Bievre
   image: 'grand-orly-seine-bievre.png'
+  width: 140
 - title: Fondation lire et comprendre
   image: 'fondation-lire-et-comprendre.png'
+  width: 140

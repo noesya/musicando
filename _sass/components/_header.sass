@@ -16,12 +16,14 @@
 
     @include media-breakpoint-up(md)
         .navbar
+            align-items: flex-start
             &-brand
-                margin-top: $gutters * 3
+                margin-left: px2rem(-72)
+                margin-top: px2rem(50)
             &-collapse
                 justify-content: flex-end
-            > .container
-                align-items: flex-start
+            &-nav
+                margin-right: -0.5rem
         .nav-item
             margin-left: $gutters
 
