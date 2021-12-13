@@ -2,31 +2,35 @@
     margin-bottom: $gutters * 3
     picture
         display: block
-        margin-bottom: $gutters * 2
+        margin-bottom: -$gutters * 2
         width: 100%
+    .number
+        align-items: flex-end
+        padding-bottom: 5%
+        position: relative
+        z-index: -1
+
 
     @include media-breakpoint-up(md)
         margin-bottom: $gutters * 5
         .number
-            margin-left: calc(-#{$col} * 2 + #{$grid-gutter-width} / 2)
+            justify-content: flex-end
+            padding-bottom: 2%
+            padding-right: $col
             position: absolute
-            transform: translateY(-40%)
-            z-index: -1
+            transform: translate(calc(-50% - #{$grid-gutter-width} / 2), -40%)
         picture
             width: calc(#{$col} * 9.5 + #{$grid-gutter-width})
         &:nth-child(odd)
             picture
-                width: calc(#{$col} * 10 - (1.5rem / 6))
+                width: calc(#{$col} * 10 - (#{$grid-gutter-width} / 6))
 
-    @include media-breakpoint-up(xl)
-        .number
-            margin-left: calc(-#{$col} + #{$grid-gutter-width} / 2)
 
     @include media-breakpoint-down(sm)
         overflow: hidden
         .number
-            transform: translateX(-50%)
+            transform: translateX(calc(-50% + #{$grid-gutter-width} / 2))
         &:nth-child(odd)
             .number
                 margin-left: auto
-                transform: translateX(50%)
+                transform: translateX(calc(50% - #{$grid-gutter-width} / 2))

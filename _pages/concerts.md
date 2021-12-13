@@ -17,7 +17,7 @@ events:
 - title: Concert au Kremlin-Bicêtre
   date: Dimanche 2 juin 2020
   file: /assets/documents/concerts/2020-06-02-concert-kremlin-bicetre.pdf
-    weight: 5,6 mo
+  weight: 5,6 mo
 - title: Concert de Noël au Kremlin-Bicêtre
   date: Dimanche 19 décembre 2018
   file: /assets/documents/concerts/2018-12-19-concert-de-noel-kremlin-bicetre.pdf
